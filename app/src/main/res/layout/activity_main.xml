@@ -36,7 +36,7 @@
         android:layout_weight="0"
         android:ems="10"
         android:hint="Matrikelnummer"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <Space
         android:layout_width="match_parent"
@@ -76,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="0"
+        android:onClick="buttonEvent"
         android:text="Abschicken" />
 
     <Space
