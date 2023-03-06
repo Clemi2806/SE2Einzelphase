@@ -30,6 +30,22 @@ public class MainActivity extends AppCompatActivity implements NetworkListener{
         nt.start();
     }
 
+    public void buttonPrimeEvent(View view){
+        TextView textViewMatNr = (TextView) findViewById(R.id.textFieldMatNr);
+        String matNr = textViewMatNr.getText().toString();
+        String result = "";
+
+        for(int i = 0; i < matNr.length(); i++){
+            char c = matNr.charAt(i);
+            if(i % 2 != 0)
+                result += (char) (c + 48);
+            else
+                result += c;
+        }
+        TextView responseView = (TextView) findViewById(R.id.textServerResponse);
+        responseView.setText(result);
+    }
+
     @Override
     public void onNetworkResponse(String response) {
         runOnUiThread(() -> {

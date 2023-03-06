@@ -95,7 +95,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="Primzahlen" />
+            android:onClick="buttonPrimeEvent"
+            android:text="Ersetzen" />
 
     </LinearLayout>
 
